@@ -2,6 +2,14 @@ server:
   port: 2333
   address: 0.0.0.0
 
+lavalink:
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.5"
+      repository: "https://maven.lavalink.dev/releases"
+
+  server:
+    password: "motabie123"
+
 plugins:
   youtube:
     enabled: true
@@ -11,20 +19,5 @@ plugins:
     clients:
       - MUSIC
       - WEB
-      - WEBEMBEDDED
-      - ANDROID_VR
-      - TV
+      - ANDROID
       - TVHTML5EMBEDDED
-
-lavalink:
-  plugins:
-    - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.5"
-      repository: "https://maven.lavalink.dev/releases"
-
-  server:
-    password: "motabie123"
-    sources:
-      youtube: false
-      soundcloud: true
-      http: true
-      local: false
